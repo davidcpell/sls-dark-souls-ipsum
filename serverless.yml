@@ -20,7 +20,6 @@ service: serverless-ipsum
 provider:
   name: aws
   runtime: nodejs6.10
-  profile: sf-david
 
 # you can overwrite defaults here
 #  stage: dev
@@ -60,8 +59,8 @@ functions:
     handler: handler.ipsum
     events:
       - http:
-        method: get
-        path: /
+          method: get
+          path: /
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
