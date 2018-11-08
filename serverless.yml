@@ -20,6 +20,7 @@ service: serverless-ipsum
 provider:
   name: aws
   runtime: nodejs6.10
+  profile: sf-david
 
 # you can overwrite defaults here
 #  stage: dev
